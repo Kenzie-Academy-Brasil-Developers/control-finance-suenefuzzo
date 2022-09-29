@@ -1,0 +1,34 @@
+.display{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align{
+    align-items: center;
+}
+
+.space-beet{
+    justify-content: space-between;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.margin-top{
+    margin-top: 10.313rem;
+}
+
+.gap{
+    gap: 14px;
+}
+
+
+

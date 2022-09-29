@@ -39,6 +39,8 @@
 
   --font-family-1: "Inter", sans-serif;
   --font-family-2: "Nunito", sans-serif;
+
+  --padding-button: 0px 14px 0px 14px;
 }
 
 body {
@@ -48,6 +50,7 @@ body {
 .container {
   max-width: 43rem;
   margin: 0 auto;
+  justify-content: space-between;
 }
 
 @media (max-width: 700px) {
@@ -56,3 +59,4 @@ body {
     margin: 0 1rem;
   }
 }
+

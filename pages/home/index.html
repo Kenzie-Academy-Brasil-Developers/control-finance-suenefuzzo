@@ -8,10 +8,89 @@
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <meta name="description" content="Control Finance - Seu controle financeiro">
     <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/positioning.css">
+    <link rel="stylesheet" href="../../styles/buttons.css">
+    <link rel="stylesheet" href="../../styles/texts.css">
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <main id="app"></main>
+    <header class="header fixed">
+        <nav class="container display nav-bar">
+            <h1 class="logo"><span>Control</span> Finance</h1>
+            <button class="button-register-value display">Registrar novo valor</button>
+        </nav>
+    </header>
+
+    <main class="container margin-top" id="app">
+        <section class="display space-beet">
+            <div>
+               <h2 class="title-main">Resumo financeiro</h2> 
+            </div>
+            <div class="display gap">
+                <button class="button-section-title display">Todos</button>
+                <button class="button-section-title display">Entradas</button>
+                <button class="button-section-title display">Saídas</button>
+            </div>
+        </section>
+            
+        <section class="section-sum-values display space-beet">
+            <h3 class="title-2">Soma dos valores</h3>
+            <p class="paragraph">R$ 2.120</p>
+        </section>
+        
+            
+        
+
+        <section class="section-value-register display flex-column justify-center align">
+            <h2 class="title-value-register">Nenhum valor cadastrado</h2>
+            <p class="paragraph">Registrar novo valor</p>
+        </section>
+
+        <!-- <section>
+            <div>
+                <p></p>
+                <div>
+                    <button>Entrada</button>
+                    <img src="" alt="">
+                </div>
+            </div>
+
+            <div>
+                <p></p>
+                <div>
+                    <button>Entrada</button>
+                    <img src="" alt="">
+                </div>
+            </div>
+        </section> -->
+
+        <!-- <div class="modal-wrapper">
+            <div class="modal">
+
+                <header>
+                    <h2>Registro de valor</h2>
+                    <img src="" alt="">
+                </header>
+                <p>Digite o valor e em seguida aperte no botão referente ao tipo do valor</p>
+                <label for="">Valor</label>
+                <input type="number" placeholder="R$ 00,00">
+                <div>
+                    <h3>Tipo de valor</h3>
+                    <button>Entrada</button>
+                    <button>Saída</button>
+                </div>
+                <div>
+                    <button>Cancelar</button>
+                    <button>Inserir valor</button>
+                </div>
+            
+            </div>
+        </div> -->
+        
+    </main>
+
     <script src="/scripts/modal.js"></script>
     <script src="valuesData.js"></script>
     <script src="index.js"></script>

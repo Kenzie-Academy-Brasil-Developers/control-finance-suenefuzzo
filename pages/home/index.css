@@ -1,1 +1,32 @@
-/* Desenvolva a estilização da sua página aqui */
+.section-title{
+    margin-top: 10.313rem;
+}
+
+.section-sum-values{
+    padding: 14px 15px;
+    margin-top: 30px;
+    height: 45px;
+    background-color: var(--color-grey-5);
+    border: 1.5px solid var(--color-grey-4);
+    border-radius: var(--radius-1);
+    align-items: center;
+}
+
+.paragraph{
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-2);
+    line-height: 17px;
+    color: var(--color-grey-1);
+}
+
+.section-value-register{
+    background-color: var(--color-grey-5);
+    border: 1.5px dashed var(--color-grey-3);
+    border-radius: var(--radius-1);
+    margin-top: 25px;
+    height: 5.25rem;
+    gap: 16px;
+}
+
+

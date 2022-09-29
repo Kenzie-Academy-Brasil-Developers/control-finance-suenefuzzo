@@ -1,0 +1,23 @@
+.header{
+    background-color: var(--color-grey-5);
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+.nav-bar{
+    height: 6.813rem;
+    align-items: center;
+    
+}
+
+.nav-bar h1 span{
+    color: var(--color-brand-1);
+}
+
+.logo{
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-1);
+    font-family: var(--font-family-1);
+    line-height: 1.513rem;
+}
