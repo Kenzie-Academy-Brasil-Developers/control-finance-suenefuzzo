@@ -1,0 +1,6 @@
+.input-modal{
+    height: 2.75rem;
+    padding: 0 10px;
+    border: 1.5px solid var(--color-grey-3);
+    border-radius: var(--radius-1);
+}

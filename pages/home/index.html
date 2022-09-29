@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Control Finance</title>
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
-    <meta name="description" content="Control Finance - Seu controle financeiro">
-    <link rel="stylesheet" href="/styles/globalStyles.css">
-    <link rel="stylesheet" href="../../styles/header.css">
-    <link rel="stylesheet" href="../../styles/positioning.css">
-    <link rel="stylesheet" href="../../styles/buttons.css">
-    <link rel="stylesheet" href="../../styles/texts.css">
-    <link rel="stylesheet" href="index.css">
-</head>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Control Finance - Seu controle financeiro"
+    />
+    <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="../../styles/header.css" />
+    <link rel="stylesheet" href="../../styles/positioning.css" />
+    <link rel="stylesheet" href="../../styles/buttons.css" />
+    <link rel="stylesheet" href="../../styles/texts.css" />
+    <link rel="stylesheet" href="../../styles/modal.css">
+    <link rel="stylesheet" href="../../styles/inputs.css">
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header fixed">
-        <nav class="container display nav-bar">
-            <h1 class="logo"><span>Control</span> Finance</h1>
-            <button class="button-register-value display">Registrar novo valor</button>
-        </nav>
+      <nav class="container display nav-bar">
+        <h1 class="logo"><span>Control</span> Finance</h1>
+        <button class="button-purple">
+          Registrar novo valor
+        </button>
+      </nav>
     </header>
 
     <main class="container margin-top" id="app">
-        <section class="display space-beet">
-            <div>
-               <h2 class="title-main">Resumo financeiro</h2> 
-            </div>
-            <div class="display gap">
-                <button class="button-section-title display">Todos</button>
-                <button class="button-section-title display">Entradas</button>
-                <button class="button-section-title display">Saídas</button>
-            </div>
-        </section>
-            
-        <section class="section-sum-values display space-beet">
-            <h3 class="title-2">Soma dos valores</h3>
-            <p class="paragraph">R$ 2.120</p>
-        </section>
-        
-            
-        
+      <section class="display space-beet">
+        <div>
+          <h2 class="title-main">Resumo financeiro</h2>
+        </div>
+        <div class="display gap">
+          <button class="button-section-title display">Todos</button>
+          <button class="button-section-title display">Entradas</button>
+          <button class="button-section-title display">Saídas</button>
+        </div>
+      </section>
 
-        <section class="section-value-register display flex-column justify-center align">
-            <h2 class="title-value-register">Nenhum valor cadastrado</h2>
-            <p class="paragraph">Registrar novo valor</p>
-        </section>
+      <section class="section-sum-values display space-beet">
+        <h3 class="title-2">Soma dos valores</h3>
+        <p class="paragraph">R$ 2.120</p>
+      </section>
 
-        <!-- <section>
+      <section
+        class="section-value-register display flex-column justify-center align"
+      >
+        <h2 class="title-value-register">Nenhum valor cadastrado</h2>
+        <p class="paragraph">Registrar novo valor</p>
+      </section>
+
+      <!-- <section>
             <div>
                 <p></p>
                 <div>
@@ -65,34 +71,40 @@
                 </div>
             </div>
         </section> -->
-
-        <!-- <div class="modal-wrapper">
-            <div class="modal">
-
-                <header>
-                    <h2>Registro de valor</h2>
-                    <img src="" alt="">
-                </header>
-                <p>Digite o valor e em seguida aperte no botão referente ao tipo do valor</p>
-                <label for="">Valor</label>
-                <input type="number" placeholder="R$ 00,00">
-                <div>
-                    <h3>Tipo de valor</h3>
-                    <button>Entrada</button>
-                    <button>Saída</button>
-                </div>
-                <div>
-                    <button>Cancelar</button>
-                    <button>Inserir valor</button>
-                </div>
-            
-            </div>
-        </div> -->
-        
     </main>
+
+    <div class="modal-wrapper">
+      <div class="modal display flex-column gap-modal">
+
+        <header class="display space-beet align">
+          <h2 class="title-modal">Registro de valor</h2>
+          <button class="button-close-modal">X</button>
+        </header>
+        <p class="paragraph paragraph-modal">
+          Digite o valor e em seguida aperte no botão referente ao tipo do valor
+        </p>
+
+        <div class="display flex-column gap">
+            <label class="titles-modal" for="">Valor</label>
+        <input class="input-modal" type="text" placeholder="R$ 00,00"/>
+        </div>
+        
+        <div class="display align gap">
+          <h3 class="titles-modal">Tipo de valor</h3>
+          <button class="button-type-value">Entrada</button>
+          <button class="button-type-value">Saída</button>
+        </div>
+
+        <div class="display align-flex-end gap">
+          <button class="button-cancel-modal">Cancelar</button>
+          <button class="button-purple">Inserir valor</button>
+        </div>
+      </div>
+    </div>
+
 
     <script src="/scripts/modal.js"></script>
     <script src="valuesData.js"></script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

@@ -13,7 +13,11 @@
 }
 
 .paragraph{
-
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-2);
+    line-height: 17px;
+    color: var(--color-grey-1);
 }
 
 .title-value-register{
