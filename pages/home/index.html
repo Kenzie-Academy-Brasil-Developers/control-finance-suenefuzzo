@@ -24,7 +24,7 @@
     <header class="header fixed">
       <nav class="container display nav-bar">
         <h1 class="logo"><span>Control</span> Finance</h1>
-        <button class="button-purple">
+        <button data-modal-control="open-register" class="button-purple">
           Registrar novo valor
         </button>
       </nav>
@@ -73,12 +73,12 @@
         </section> -->
     </main>
 
-    <div class="modal-wrapper">
+    <div class="modal-wrapper" id="open-register">
       <div class="modal display flex-column gap-modal">
 
         <header class="display space-beet align">
           <h2 class="title-modal">Registro de valor</h2>
-          <button class="button-close-modal">X</button>
+          <button class="button-close-modal" data-modal-control="open-register">X</button>
         </header>
         <p class="paragraph paragraph-modal">
           Digite o valor e em seguida aperte no botão referente ao tipo do valor
