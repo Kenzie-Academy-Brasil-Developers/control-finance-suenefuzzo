@@ -16,8 +16,18 @@
     border-radius: var(--radius-1);
     padding: 1.5rem;
     margin-top: 15.625rem;
-    
+    animation: animation-modal var(--animation-duration) var(--animation-type);
 }
+
+@keyframes animation-modal{
+    from{
+        transform: translateY(-244px);  
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
 
 .title-modal{
     font-family: var(--font-family-1);
