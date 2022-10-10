@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="../../styles/positioning.css" />
     <link rel="stylesheet" href="../../styles/buttons.css" />
     <link rel="stylesheet" href="../../styles/texts.css" />
-    <link rel="stylesheet" href="../../styles/modal.css">
-    <link rel="stylesheet" href="../../styles/inputs.css">
+    <link rel="stylesheet" href="../../styles/modal.css" />
+    <link rel="stylesheet" href="../../styles/inputs.css" />
     <link rel="stylesheet" href="index.css" />
   </head>
 
@@ -47,12 +47,7 @@
         <p class="paragraph">R$ 2.120</p>
       </section>
 
-      <section
-        class="section-value-register display flex-column justify-center align"
-      >
-        <h2 class="title-value-register">Nenhum valor cadastrado</h2>
-        <p class="paragraph">Registrar novo valor</p>
-      </section>
+      
 
       <!-- <section>
             <div>
@@ -75,36 +70,60 @@
 
     <div class="modal-wrapper" id="open-register">
       <div class="modal display flex-column gap-modal">
-
         <header class="display space-beet align">
           <h2 class="title-modal">Registro de valor</h2>
-          <button class="button-close-modal" data-modal-control="open-register">X</button>
+          <button class="button-close-modal" data-modal-control="open-register">
+            X
+          </button>
         </header>
         <p class="paragraph paragraph-modal">
           Digite o valor e em seguida aperte no botão referente ao tipo do valor
         </p>
 
-        <div class="display flex-column gap">
+        <div>
+          <div class="display flex-column gap">
             <label class="titles-modal" for="">Valor</label>
-        <input class="input-modal" type="text" placeholder="R$ 00,00"/>
-        </div>
-        
-        <div class="display align gap">
-          <h3 class="titles-modal">Tipo de valor</h3>
-          <button class="button-type-value">Entrada</button>
-          <button class="button-type-value">Saída</button>
-        </div>
+            <input
+              class="input-modal"
+              type="number"
+              ondrop="return false;"
+              onpast="return false;"
+              onkeypress="return event.charCode>=48 && event.charCode<=57"
+              required
+              placeholder="R$ 00,00"
+            />
+          </div>
 
-        <div class="display align-flex-end gap">
-          <button class="button-cancel-modal" data-modal-control="open-register">Cancelar</button>
-          <button class="button-purple">Inserir valor</button>
+          <div class="display align gap div-button-value">
+            <h3 class="titles-modal">Tipo de valor</h3>
+            <button class="button-type-value" data-value-type="1">
+              Entrada
+            </button>
+            <button class="button-type-value" data-value-type="2">Saída</button>
+          </div>
+
+          <div class="display align-flex-end gap">
+            <button
+              class="button-cancel-modal"
+              data-modal-control="open-register"
+            >
+              Cancelar
+            </button>
+            <button data-modal-control="open-register" class="button-purple" id="insert-value">
+              Inserir valor
+            </button>
+          </div>
         </div>
       </div>
     </div>
 
+    <div id="new-entry">
+      
+    </div>
 
     <script src="/scripts/modal.js"></script>
     <script src="valuesData.js"></script>
+    <script src="../../scripts/render.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

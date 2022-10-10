@@ -55,6 +55,11 @@
     border: 1.5px solid var(--color-brand-1);
 }
 
+.button-type-value[selected] {
+    color: var(--color-brand-1);
+    border: 1.5px solid var(--color-brand-1);
+}
+
 .button-cancel-modal{
     height: 1.938rem;
     border-radius: var(--radius-1);
@@ -79,5 +84,22 @@
     border-radius: var(--radius-2);
     color: var(--color-grey-2);
     cursor: pointer;
-    
+
+}
+
+.button-delete-item{
+    background-image: url(../assets/trash.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1.766rem;
+    height: 1.625rem;
+    background-color: transparent;
+    border: 1.5px solid var(--color-grey-5);
+    border-radius: var(--radius-2);
+    cursor: pointer;
+}
+
+.button-delete-item:hover{
+    background-image: url(../assets/trash-hover.svg);
+    background-color: var(--color-grey-4);
 }

@@ -4,3 +4,7 @@
     border: 1.5px solid var(--color-grey-3);
     border-radius: var(--radius-1);
 }
+
+.input-modal:hover{
+    border: 1.5px solid var(--color-brand-1);
+}
